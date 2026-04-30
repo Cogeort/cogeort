@@ -194,7 +194,7 @@ const Tarifs = () =>
             <li>Note de synthèse 6 pages</li>
             <li>Plan d'action priorisé</li>
           </ul>
-          <a href="#rdv" className="btn btn-ghost" style={{ justifyContent: 'center' }}>Choisir cette formule</a>
+          <a href="#rdv" className="btn btn-primary" style={{ justifyContent: 'center' }}>Choisir cette formule</a>
         </div>
 
         <div className="price-card">
@@ -212,7 +212,7 @@ const Tarifs = () =>
             <li>Suivi à 30 et 60 jours</li>
             <li>Templates remis</li>
           </ul>
-          <a href="#rdv" className="btn btn-primary" style={{ justifyContent: 'center' }}>Choisir cette formule</a>
+          <a href="#rdv" className="btn btn-ghost" style={{ justifyContent: 'center' }}>Choisir cette formule</a>
         </div>
 
         <div className="price-card">
