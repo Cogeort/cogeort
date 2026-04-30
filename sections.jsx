@@ -180,7 +180,7 @@ const Tarifs = () =>
         </p>
       </div>
       <div className="pricing">
-        <div className="price-card">
+        <div className="price-card featured">
           <div className="price-name">Formule · Démarrage</div>
           <h3 className="price-title">Diagnostic flash</h3>
           <div className="price-amount">
@@ -197,7 +197,7 @@ const Tarifs = () =>
           <a href="#rdv" className="btn btn-ghost" style={{ justifyContent: 'center' }}>Choisir cette formule</a>
         </div>
 
-        <div className="price-card featured">
+        <div className="price-card">
           <div className="price-name">Formule · Mission</div>
           <h3 className="price-title">Refonte complète</h3>
           <div className="price-amount">
