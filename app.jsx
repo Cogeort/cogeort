@@ -102,7 +102,7 @@ const Footer = () => (
       </div>
       <div className="footer-bottom">
         <span>© 2026 Cogeort · Tous droits réservés</span>
-        <span>Taillé pour votre vous</span>
+        <span>Taillé pour vous</span>
       </div>
     </div>
   </footer>
