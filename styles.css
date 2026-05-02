@@ -274,4 +274,4 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .contact-link:hover {
   color: var(--magenta);
   border-color: var(--magenta);
-}}
+}
