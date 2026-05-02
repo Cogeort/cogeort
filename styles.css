@@ -265,6 +265,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .rdv-block { grid-template-columns: 1fr; padding: 32px; gap: 32px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .section-head { flex-direction: column; align-items: flex-start; }
+}
+
+/* Contact link */
 .contact-link {
   color: var(--ink);
   text-decoration: none;
