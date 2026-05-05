@@ -25,7 +25,7 @@ const Hero = () =>
     <div className="wrap">
       <div className="hero-eyebrow">
         <span className="dot"></span>
-        <span>Places disponibles · Mai 2026</span>
+        <span>Disponible · juin 2026</span>
       </div>
       <h1>
         Structurez votre <span className="grad">façon de travailler.</span>
@@ -202,7 +202,7 @@ const Tarifs = () =>
           <div className="price-name">Formule · Mission</div>
           <h3 className="price-title">Refonte complète</h3>
           <div className="price-amount">
-            <span className="num">1900</span>
+            <span className="num">1 900</span>
             <span className="unit">€ HT · à partir de</span>
           </div>
           <p className="price-desc">Audit, conception et mise en route sur 6 à 10 semaines.</p>
@@ -288,7 +288,7 @@ const Modules = () => {
   const modules = [
     {
       tag: "M · 01", icon: icons.invoice, name: "Devis & Factures",
-      kpi: "−40%", kpiUnit: "Délai de paiement",
+      kpi: "−40 %", kpiUnit: "Délai de paiement",
       items: ["Demande reçue", "Devis généré", "Envoi au client", "Relance automatisée", "Facture émise", "Suivi de paiement"]
     },
     {
@@ -300,12 +300,12 @@ const Modules = () => {
     },
     {
       tag: "M · 03", icon: icons.crm, name: "CRM intelligent",
-      kpi: "−65%", kpiUnit: "Temps de réponse",
+      kpi: "−65 %", kpiUnit: "Temps de réponse",
       items: ["Email reçu", "Analyse & préparation", "Attribution", "Tag automatique", "Brouillon préparé"]
     },
     {
       tag: "M · 04", icon: icons.support, name: "Service après-vente",
-      kpi: "80%", kpiUnit: "Résolution N1",
+      kpi: "80 %", kpiUnit: "Résolution N1",
       items: ["Ticket reçu", "Analyse & catégorisation", "Base de connaissance", "Réponse préparée", "Résolution"]
     },
     {
