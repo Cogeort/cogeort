@@ -97,9 +97,9 @@ const FooterV2 = () => (
         <div>
           <h5>Contact</h5>
           <ul>
-            <li>contact@cogeort.fr</li>
-            <li>06 00 00 00 00</li>
-            <li>France · à distance</li>
+            <li><a href="mailto:thomas@cogeort.fr?subject=Contact%20depuis%20cogeort.fr" style="text-decoration:underline; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">thomas@cogeort.fr</a></li>
+            <li><a href="tel:+33658710093" className="contact-link">06 58 71 00 93</a></li>
+            <li>Toulouse · En distanciel</li>
           </ul>
         </div>
         <div>
