@@ -247,6 +247,7 @@ const TarifsV2 = () => (
         </div>
         <div className="pricing">
           <div className="price-card">
+             <div className="featured-stamp">Le plus choisi</div>
             <div className="price-name">i — Démarrage</div>
             <h3 className="price-title">Diagnostic flash</h3>
             <div className="price-amount">
@@ -267,11 +268,10 @@ const TarifsV2 = () => (
           </div>
 
           <div className="price-card featured">
-            <div className="featured-stamp">Le plus choisi</div>
             <div className="price-name">ii — <span className="vermillon">Mission</span></div>
             <h3 className="price-title">Refonte complète</h3>
             <div className="price-amount">
-              <span className="num serif">1 900<em>€</em></span>
+              <span className="num serif">1900<em>€</em></span>
               <span className="unit">HT · à partir de</span>
             </div>
             <p className="price-desc">Audit, conception et mise en route sur 6 à 10 semaines.</p>
