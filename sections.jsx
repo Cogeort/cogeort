@@ -293,7 +293,7 @@ const Modules = () => {
     },
     {
       tag: "M · 02", icon: icons.ledger, name: "Suivi comptable",
-      kpi: "×10", kpiUnit: "ROI moyen",
+      kpi: "×10", kpiUnit: "ROI     moyen",
       sub: "Zéro saisie manuelle",
       items: ["Facture reçue", "OCR + extraction", "Classement", "Vérification automatisée", "Archivage"],
       featured: true
