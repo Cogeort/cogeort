@@ -336,3 +336,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .section-head { flex-direction: column; align-items: flex-start; }
 }
+
+/* Contact link */
+.footer ul li a.contact-link {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.footer ul li a.contact-link:hover {
+  color: var(--magenta);
+  border-color: var(--magenta);
+}
