@@ -25,7 +25,7 @@ const Hero = () =>
     <div className="wrap">
       <div className="hero-eyebrow">
         <span className="dot"></span>
-        <span>Places disponible · Mai 2026</span>
+        <span>Places disponibles · Mai 2026</span>
       </div>
       <h1>
         Structurez votre <span className="grad">façon de travailler.</span>
