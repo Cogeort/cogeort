@@ -86,8 +86,8 @@ const Footer = () => (
         <div>
           <h5>Contact</h5>
           <ul>
-            <li>contact@cogeort.fr</li>
-            <li>06 00 00 00 00</li>
+            <li><a href="mailto:thomas@cogeort.fr" className="contact-link">thomas@cogeort.fr</a></li>
+            <li><a href="tel:+33658710093" className="contact-link">06 58 71 00 93</a></li>
             <li>France · à distance</li>
           </ul>
         </div>
@@ -190,6 +190,7 @@ const App = () => {
       {tweaks.showMarquee && <Marquee />}
       <Approche />
       <Prestations />
+      <Modules />
       <Tarifs />
       <Process />
       <RDV />
