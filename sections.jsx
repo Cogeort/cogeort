@@ -202,7 +202,7 @@ const Tarifs = () =>
           <div className="price-name">Formule · Mission</div>
           <h3 className="price-title">Refonte complète</h3>
           <div className="price-amount">
-            <span className="num">1 900</span>
+            <span className="num">1900</span>
             <span className="unit">€ HT · à partir de</span>
           </div>
           <p className="price-desc">Audit, conception et mise en route sur 6 à 10 semaines.</p>
