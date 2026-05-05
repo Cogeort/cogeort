@@ -326,15 +326,77 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   to { transform: translateX(-50%); }
 }
 
-/* Responsive */
+/* Responsive — Tablet */
 @media (max-width: 900px) {
+  .wrap { padding: 0 24px; }
   .nav-links { display: none; }
-  .hero-meta { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  .hero-meta-item { border-right: none; }
+  .hero { padding: 64px 0 80px; }
+  .hero-meta { margin-top: 64px; grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
+  .hero-meta-item { border-right: none; padding-right: 0; }
   .pillars, .services, .pricing, .process { grid-template-columns: 1fr; }
+  .section { padding: 80px 0; }
+  .section-head { flex-direction: column; align-items: flex-start; margin-bottom: 48px; }
   .rdv-block { grid-template-columns: 1fr; padding: 32px; gap: 32px; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .section-head { flex-direction: column; align-items: flex-start; }
+  .rdv-info h2 { font-size: 36px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer { padding: 64px 0 32px; }
+  .marquee-item { font-size: 22px; gap: 40px; }
+  .marquee-track { gap: 40px; }
+}
+
+/* Responsive — Mobile */
+@media (max-width: 600px) {
+  .wrap { padding: 0 20px; }
+  .nav-inner { padding: 14px 0; }
+  .brand-name { font-size: 16px; }
+  .nav .btn-primary {
+    padding: 10px 14px; font-size: 13px;
+  }
+  .nav .btn-primary .arrow,
+  .nav .btn-primary { gap: 6px; }
+  .hero { padding: 48px 0 64px; }
+  .hero-eyebrow { margin-bottom: 24px; font-size: 11px; }
+  .hero h1 {
+    font-size: clamp(40px, 11vw, 56px);
+    margin-bottom: 24px;
+  }
+  .hero-sub { font-size: 17px; margin-bottom: 32px; }
+  .hero-cta { gap: 12px; }
+  .hero-cta .btn { padding: 12px 18px; font-size: 13px; }
+  .hero-meta { margin-top: 48px; padding-top: 24px; }
+  .hero-meta-v { font-size: 18px; }
+  .section { padding: 64px 0; }
+  .section-head { margin-bottom: 40px; gap: 16px; }
+  .section h2 { font-size: clamp(32px, 8vw, 44px); }
+  .section-intro { font-size: 15px; }
+  .pillar { padding: 36px 24px; }
+  .pillar h3 { font-size: 22px; }
+  .service { padding: 32px 24px; }
+  .service h3 { font-size: 24px; }
+  .price-card { padding: 32px 24px; }
+  .price-amount .num { font-size: 48px; }
+  .step { padding: 32px 20px; }
+  .step-num { font-size: 56px; margin-bottom: 16px; }
+  .rdv-block { padding: 24px; gap: 24px; border-radius: 8px; }
+  .rdv-info h2 { font-size: 30px; }
+  .rdv-info p { font-size: 15px; }
+  .rdv-bullets .k { min-width: 64px; font-size: 11px; }
+  .rdv-form { padding: 20px; }
+  .slot-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer { padding: 56px 0 32px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; margin-bottom: 48px; }
+  .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .marquee { padding: 18px 0; }
+  .marquee-item { font-size: 18px; gap: 28px; }
+  .marquee-track { gap: 28px; }
+}
+
+/* Responsive — Very small */
+@media (max-width: 380px) {
+  .wrap { padding: 0 16px; }
+  .nav .btn-primary { padding: 9px 12px; font-size: 12px; }
+  .hero h1 { font-size: 38px; }
+  .hero-meta { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
 }
 
 /* Contact link */
