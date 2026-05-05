@@ -86,7 +86,7 @@ const Footer = () => (
         <div>
           <h5>Contact</h5>
           <ul>
-            <li><a href="mailto:thomas@cogeort.fr" className="contact-link">thomas@cogeort.fr</a></li>
+            <li><a href="mailto:thomas@cogeort.fr?subject=Contact%20depuis%20cogeort.fr">thomas@cogeort.fr</a></li>
             <li><a href="tel:+33658710093" className="contact-link">06 58 71 00 93</a></li>
             <li>Toulouse · En distanciel</li>
           </ul>
