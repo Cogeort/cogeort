@@ -190,7 +190,6 @@ const App = () => {
       {tweaks.showMarquee && <Marquee />}
       <Approche />
       <Prestations />
-      <Modules />
       <Tarifs />
       <Process />
       <RDV />
