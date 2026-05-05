@@ -272,7 +272,6 @@ const Process = () =>
   </section>;
 
 
-const Modules = () => {
  const Icon = ({d}) => (
   <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     {d}
