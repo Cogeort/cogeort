@@ -7,13 +7,14 @@ const Nav = () =>
         <img src="assets/logo.png" alt="Cogeort" />
         <span className="brand-name">Cogeort</span>
       </a>
-      <div className="nav-links">
-        <a href="#approche">Approche</a>
-        <a href="#prestations">Prestations</a>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#process">Méthode</a>
-        <a href="#rdv">Rendez-vous</a>
-      </div>
+     <div className="nav-links">
+  <a href="#approche">Approche</a>
+  <a href="#prestations">Prestations</a>
+  <a href="#modules">Modules</a> 
+  <a href="#tarifs">Tarifs</a>
+  <a href="#process">Méthode</a>
+  <a href="#rdv">Rendez-vous</a>
+</div>
       <a href="#rdv" className="btn btn-primary">Prendre rendez-vous →</a>
     </div>
   </nav>;
@@ -269,6 +270,78 @@ const Process = () =>
       </div>
     </div>
   </section>;
+const Modules = () => {
+  const modules = [
+    {
+      tag: "M · 01", icon: "📄", name: "Devis & Factures",
+      kpi: "−40 %", kpiUnit: "Délai de paiement",
+      items: ["Demande reçue", "Devis généré", "Envoi au client", "Relance automatisée", "Facture émise", "Suivi de paiement"]
+    },
+    {
+      tag: "M · 02", icon: "📋", name: "Suivi comptable",
+      kpi: "×10", kpiUnit: "ROI moyen",
+      sub: "Zéro saisie manuelle",
+      items: ["Facture reçue", "OCR + extraction", "Classement", "Vérification automatisée", "Archivage"],
+      featured: true
+    },
+    {
+      tag: "M · 03", icon: "◳", name: "CRM intelligent",
+      kpi: "−65 %", kpiUnit: "Temps de réponse",
+      items: ["Email reçu", "Analyse & préparation", "Attribution", "Tag automatique", "Brouillon préparé"]
+    },
+    {
+      tag: "M · 04", icon: "✕", name: "Service après-vente",
+      kpi: "80 %", kpiUnit: "Résolution N1",
+      items: ["Ticket reçu", "Analyse & catégorisation", "Base de connaissance", "Réponse préparée", "Résolution"]
+    },
+    {
+      tag: "M · 05", icon: "⌁", name: "Dashboard KPIs",
+      kpi: "15", kpiUnit: "KPIs suivis",
+      items: ["Connexion outils", "Collecte de données", "Analyse & préparation", "Dashboard", "Rapport envoyé"]
+    },
+  ];
+  return (
+    <section className="section" id="modules" style={{ background: 'var(--bg-2)' }}>
+      <div className="wrap">
+        <div className="section-head">
+          <div>
+            <div className="section-label">02b — Modules sur mesure</div>
+            <h2>Cinq exemples de modules livrés.</h2>
+          </div>
+          <p className="section-intro">
+            Chaque mission donne lieu à un ou plusieurs modules : un workflow simple,
+            documenté, mesurable. Voici cinq cas réels, tous métiers confondus.
+          </p>
+        </div>
+        <div className="modules-grid">
+          {modules.map((m, i) => (
+            <div key={i} className={`module-card ${m.featured ? 'featured' : ''}`}>
+              {m.featured && <div className="module-badge">Le plus demandé</div>}
+              <div className="module-tag">{m.tag}</div>
+              <div className="module-icon">{m.icon}</div>
+              <h3 className="module-name">{m.name}</h3>
+              <div className="module-kpi">
+                <span className="module-kpi-num grad-text">{m.kpi}</span>
+                <span className="module-kpi-unit">{m.kpiUnit}</span>
+              </div>
+              {m.sub && <div className="module-sub">{m.sub}</div>}
+              <ul className="module-list">
+                {m.items.map((it, j) => (
+                  <li key={j}>{it}</li>
+                ))}
+              </ul>
+              <a href="#rdv" className={`btn ${m.featured ? 'btn-primary' : 'btn-ghost'}`} style={{justifyContent:'center'}}>
+                Commencer
+              </a>
+            </div>
+          ))}
+        </div>
+        <div className="modules-foot">
+          Vous avez un autre cas en tête ? <a href="#rdv">Parlons-en</a>.
+        </div>
+      </div>
+    </section>
+  );
+};
 
-
-Object.assign(window, { Nav, Hero, Marquee, Approche, Prestations, Tarifs, Process });
+Object.assign(window, { Nav, Hero, Marquee, Approche, Prestations, Modules, Tarifs, Process });
